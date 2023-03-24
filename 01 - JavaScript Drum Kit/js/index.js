@@ -11,8 +11,8 @@ function playSound(event) {
   if (!audio) return;
 
   key.classList.add("playing");
-  audio.play();
   audio.currentTime = 0;
+  audio.play();
 }
 
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
